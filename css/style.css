@@ -1,0 +1,526 @@
+/* PRINCIPAIS */
+html {
+    font-size: 14px;
+    position: relative;
+    min-height: 100%;
+    overflow-x: hidden !important;
+}
+
+body {
+    overflow: hidden;
+    margin: 0 0 10.71rem;
+}
+
+/* LINKS */
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    transition: ease-in-out all 0.3s;
+    -moz-transition: ease-in-out all 0.3s;
+    -webkit-transition: ease-in-out all 0.3s;
+}
+
+/* TÍTULOS */
+h1 {
+    font-size: 4rem;
+    margin: 2rem 0 3rem;
+}
+
+.font-stylized {
+    font-family: 'Pacifico', cursive;
+}
+
+/* CARTÕES */
+.card {
+    min-height: 14.285rem;
+
+    -webkit-box-shadow: 0 0.2857rem 0.5714rem 0 rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 0.2857rem 0.5714rem 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.2857rem 0.5714rem 0 rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+    -webkit-box-shadow: 0 0.4286rem 0.7143rem 0 rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 0.4286rem 0.7143rem 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.4286rem 0.7143rem 0 rgba(0, 0, 0, 0.2);
+}
+
+/* MENU */
+.menu {
+    width: 100%;
+    height: 5rem;
+    background-color: transparent;
+    position: fixed;
+    z-index: 100;
+
+    transition: ease-in-out all 0.5s;
+    -moz-transition: ease-in-out all 0.5s;
+    -webkit-transition: ease-in-out all 0.5s;
+}
+
+.menu.purple {
+    background-color: rgba(28, 5, 28, 0.85);
+
+    transition: ease-in-out all 0.5s;
+    -moz-transition: ease-in-out all 0.5s;
+    -webkit-transition: ease-in-out all 0.5s;
+}
+
+.menu ul {
+    float: right;
+    padding: 0;
+    line-height: 5rem;
+    margin: 0;
+    list-style: none;
+}
+
+.menu ul li {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 2rem;
+
+    text-transform: lowercase;
+    font-size: 1.143rem;
+    font-weight: 700;
+}
+
+.menu ul li a {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.menu ul li a:hover {
+    color: #ffd700;
+}
+
+.menu ul li.active a {
+    color: #ffd700;
+}
+
+/* CABEÇALHO */
+header {
+    height: 57.14rem;
+    height: 100vh;
+}
+
+/* BANNER */
+.banner {
+    height: 57.14rem;
+    height: 100vh;
+    background: #8c198c url("../img/banner.jpg") no-repeat center top;
+    background-size: cover;
+    padding-top: 7.143rem;
+    text-align: center;
+    position: relative;
+}
+
+.banner i {
+    bottom: 1rem;
+    position: absolute;
+    text-align: center;
+    font-size: 2rem;
+    color: #ffd700;
+    cursor: pointer;
+
+    -webkit-animation: mover 1.5s infinite alternate;
+    animation: mover 1.5s infinite alternate;
+}
+
+@-webkit-keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-0.7143rem);
+    }
+}
+
+@keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-0.7143rem);
+    }
+}
+
+.banner img {
+    display: block;
+    height: 40rem;
+    height: 70vh;
+    margin: 8.571rem auto 0;
+    margin: calc(15vh - 7.143rem) auto 0;
+}
+
+/* SOBRE */
+.about {
+    background: black url("../img/sobre.jpg") no-repeat right 2rem;
+    background-size: 65% auto;
+    color: white;
+    padding: 4rem 0 6rem;
+}
+
+.about h1 {
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+
+.about h2 {
+    text-align: right;
+    color: #ccc;
+    font-weight: 700;
+}
+
+.about .subtitle {
+    font-size: 1.714rem;
+    text-align: right;
+    color: #ccc;
+}
+
+.about .description {
+    font-size: 1.3rem;
+    margin-top: 5rem;
+    text-shadow: 0.2143rem 0 0.1429rem rgba(0, 0, 0, 1);
+}
+
+.about .description > div {
+    margin-bottom: 2rem;
+}
+
+/* PACOTES */
+.packages {
+    background: #fcfcfc;
+    color: #463346;
+    padding: 2.5rem 0 5rem;
+}
+
+.packages h1 {
+    color: #463346;
+    margin-bottom: 8rem;
+}
+
+.packages div[class^="col"] {
+    padding: 0 0.3571rem;
+}
+
+.packages h2 {
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.packages a {
+    margin-top: 3rem;
+    color: #463346;
+}
+
+.packages a i {
+    margin-top: 0.2rem;
+    font-size: 3rem;
+}
+
+.packages .card {
+    margin-bottom: 3rem;
+    padding-bottom: 1rem;
+}
+
+.packages .card .card-text {
+    margin-bottom: 2rem;
+}
+
+.packages input,
+.packages input:focus {
+    outline: none;
+}
+
+/* EXCURSÃO */
+.excursion {
+    background: #fff6e5 url("../img/excursao.png") no-repeat left 90%;
+    padding: 2.5rem 0 4rem;
+    color: #cc8400;
+}
+
+.excursion h1 {
+    color: #cc8400;
+    margin-bottom: 6rem;
+}
+
+.excursion p {
+    font-size: 2.7rem;
+    font-weight: 300;
+}
+
+.excursion img {
+    display: block;
+    margin: 0 auto 3rem;
+    max-width: 25rem;
+    height: auto;
+}
+
+/* VIDEO */
+.video {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+}
+
+/* F.A.Q. */
+.faq {
+    background: #fcfcfc;
+    color: #463346;
+    padding: 2.5rem 0 5rem;
+}
+
+.faq h1 {
+    margin-bottom: 8rem;
+}
+
+.faq .card {
+    margin: 0 1rem 2rem;
+}
+
+.owl-theme .owl-controls .owl-page span {
+    background-color: #1d906a;
+}
+
+/* CONTATO */
+.contact {
+    padding: 2.5rem 0 5rem;
+    background-color: #b793db;
+}
+
+.contact h1, .contact label {
+    color: #612a61;
+}
+
+.contact h1 {
+    margin-bottom: 6rem;
+}
+
+.contact .address {
+    padding: 5rem 1rem;
+    font-size: 2.2rem;
+    overflow: hidden;
+    color: #612a61;
+    border-right: #612a61 solid medium;
+}
+
+.contact form input, textarea {
+    width: 100%;
+    margin-bottom: 1.2rem;
+
+    outline: none;
+    border: #612a61 solid medium;
+    background-color: rgba(255, 255, 255, 0.2);
+
+    font-size: 1.214rem;
+    font-weight: 300;
+
+    padding: 0.3571rem 0 0.3571rem 0.7143rem;
+}
+
+.contact label {
+    font-size: 1.214rem;
+    font-weight: 700;
+}
+
+.contact form input {
+    height: 3.571rem;
+}
+
+.contact form textarea {
+    height: 10.71rem;
+    resize: none;
+}
+
+.contact form .button {
+    border: none;
+    outline: none;
+    border-radius: 3rem;
+    background-color: #612a61;
+    padding: 0.4rem 3rem 0.6rem;
+    text-align: center;
+    color: white;
+    float: right;
+    text-transform: lowercase;
+    font-size: 1.3rem;
+}
+
+.contact form .loader {
+    font-size: 1rem;
+    color: #612a61;
+    text-align: right;
+}
+
+/* RODAPÉ */
+footer {
+    width: 100%;
+    height: 10.71rem;
+
+    background: #fcfcfc;
+
+    left: 0 !important;
+    bottom: 0 !important;
+
+    position: absolute;
+    overflow: hidden;
+}
+
+footer .left-side {
+    margin-top: 5.714rem;
+}
+
+footer .right-side {
+    margin-top: 3.571rem;
+}
+
+footer .right-side div {
+    width: 100%;
+}
+
+footer ul {
+    padding: 0;
+    list-style: none;
+}
+
+footer ul li {
+    display: inline-block;
+    margin: 0 1rem;
+    font-size: 1.8rem;
+}
+
+footer ul li a {
+    color: #463346;
+}
+
+footer ul li:nth-child(1) a:hover {
+    color: #3b5998;
+}
+
+footer ul li:nth-child(2) a:hover {
+    color: #bb0000;
+}
+
+footer ul li:nth-child(3) a:hover {
+    color: #e95950;
+}
+
+footer ul li:nth-child(4) a:hover {
+    color: #55acee;
+}
+
+footer ul li:nth-child(5) a:hover {
+    color: #dd4b39;
+}
+
+footer img {
+    max-width: 25rem !important;
+    opacity: 0.8;
+    display: inline-block !important;
+}
+
+.toast {
+    opacity: 1 !important;
+}
+
+@media all and (max-width: 768px) {
+    /* CABEÇALHO */
+    header {
+        height: 28.57rem;
+    }
+
+    /* BANNER */
+    .banner {
+        height: 28.57rem;
+        padding-top: 5.357rem;
+    }
+
+    .banner img {
+        height: 17.86rem;
+        margin: 0 auto;
+    }
+
+    /* SOBRE */
+    .about {
+        background-size: 115% auto;
+    }
+
+    .about .description {
+        margin-top: 1rem;
+    }
+
+    /* PACOTES */
+    .packages h1 {
+        margin-bottom: 3rem;
+    }
+
+    .packages div[class^="col"] {
+        padding: 0 1.071rem;
+    }
+
+    .packages .card {
+        height: 37.14rem;
+    }
+
+    /* EXCURSÕES */
+    .excursion {
+        background: #fff6e5;
+        padding: 2.5rem 0;
+    }
+
+    .excursion h1 {
+        margin-bottom: 3rem;
+    }
+
+    .excursion p {
+        font-size: 2rem;
+    }
+
+    .excursion img {
+        max-width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    /* F.A.Q. */
+    .faq h1 {
+        margin-bottom: 3rem;
+    }
+
+    /* CONTATO */
+    .contact h1 {
+        margin-bottom: 2rem;
+    }
+
+    .contact .address {
+        padding: 1rem;
+        font-size: 1.5rem;
+        color: #612a61;
+    }
+
+    /* RODAPÉ */
+    footer .left-side {
+        margin-top: 1rem;
+    }
+
+    footer .right-side {
+        margin-top: 1rem;
+    }
+
+    footer img {
+        max-width: 100% !important;
+    }
+
+    footer ul li {
+        margin: 0 0.8rem;
+    }
+}
+
+@media all and (max-width: 768px) and (orientation: landscape) {
+    /* SOBRE */
+    .about {
+        background-size: 80% auto;
+    }
+
+    /* RODAPÉ */
+    footer {
+        padding: 2rem 0 0;
+    }
+}
