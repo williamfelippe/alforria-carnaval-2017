@@ -1,4 +1,4 @@
-# alforria_carnaval_2017
+# alforria-carnaval-2017
 Landing page para divulgar o carnaval republicano da República Alforria em Ouro Preto
 
 Usando:
